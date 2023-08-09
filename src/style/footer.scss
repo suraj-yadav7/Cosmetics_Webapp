@@ -1,0 +1,41 @@
+.footerMain{
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    .socialIcons{
+        display: flex;
+        justify-content: center;
+        padding: 1.2rem;
+        align-items: center;
+        gap: 2rem;
+        svg{
+            font-size: 1.5rem;
+        }
+       
+    }
+    .policy>ul{
+        display: flex;
+        padding: 1rem;
+        justify-content: center;
+        text-align: center;
+    }
+    .contact{
+        display: flex;
+        padding: 1rem;
+        justify-content: space-evenly;
+    }
+    .appIcon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        >img{
+            height: 2.5rem;
+        }
+    }
+
+    .copyright{
+        text-align: center;
+        padding: 1rem;
+    }
+}
