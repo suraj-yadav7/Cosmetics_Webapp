@@ -32,14 +32,14 @@ const Footer = () => {
           <div>
           <h3>GET IN TOUCH</h3>
           <div >
-            <h4>Call us at</h4>
+            <h5>Call us at</h5>
             <h5>1800-234-987</h5>
-            <h5>Monday to Friday:9AM to 7Pm</h5>
+            <h5>Monday to Friday: 9AM to 7Pm</h5>
             </div>
           </div>
           <div>
             <h4>Support</h4>
-            <h5>hell0@cosmetics.com</h5>
+            <h5>hello@cosmetics.com</h5>
            
           </div>
           <div>
@@ -54,8 +54,10 @@ const Footer = () => {
       
         <div className='appIcon'>
           <h4>GET THE NEW COSMETIC APP TODAY!</h4>
-          <img src={android}/>
+          <div>
           <img src={apple}/>
+          <img src={android}/>
+          </div>
 
         </div>
         <div className='copyright'>

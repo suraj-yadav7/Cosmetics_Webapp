@@ -1,12 +1,16 @@
+@import "static";
 .footerMain{
     padding: 0 5rem;
     display: flex;
     flex-direction: column;
+    background-color: black;
+    color: #ffff;
     .socialIcons{
         display: flex;
         justify-content: center;
-        padding: 1.2rem;
+        padding: 1rem;
         align-items: center;
+        cursor: pointer;
         gap: 2rem;
         svg{
             font-size: 1.5rem;
@@ -18,24 +22,51 @@
         padding: 1rem;
         justify-content: center;
         text-align: center;
+        font-size: 16px;
     }
     .contact{
         display: flex;
         padding: 1rem;
+        height: 8rem;
         justify-content: space-evenly;
+        >div>h3{
+        font-size: 18px;
+        }
+        >div>h4,h5{
+        font-size: 18px;
+        }
+        @media (max-width:768px){
+            margin: 8rem 0;
+            flex-direction: column;
+            text-align: center;
+            gap: 12px;
+        }
     }
     .appIcon{
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 3rem;
-        >img{
-            height: 2.5rem;
+        gap: 2rem;
+        
+        >h4{
+            font-size: 20px;
         }
+        >div>img{
+            height: 2.5rem;
+            margin: 6px;
+        }
+        @media (max-width:768) {
+            flex-direction: column;
+        }
+        
     }
 
     .copyright{
         text-align: center;
-        padding: 1rem;
+        padding: 0.5rem;
+        >h4{
+            font-size: 1rem;
+            padding-top: 8px;
+        }
     }
 }

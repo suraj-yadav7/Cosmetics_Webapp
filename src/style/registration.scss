@@ -1,0 +1,10 @@
+@import "static";
+
+#register{
+    height: 60vh;
+    margin-bottom: 4rem;
+    @media(max-width:768px){
+        height: 60vh;
+        margin-bottom: 10rem;
+    }
+}
