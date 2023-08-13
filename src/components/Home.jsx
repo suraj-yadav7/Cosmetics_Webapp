@@ -1,6 +1,4 @@
-import React,{useState,useEffect} from "react";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import React, { useState, useEffect } from "react";
 import "../style/home.scss";
 import img1 from "../assest/img1.jpg";
 import img2 from "../assest/img2.jpg";
@@ -15,28 +13,26 @@ import product6 from "../assest/product6.jpg";
 import subimg1 from "../assest/subimg1.jpg";
 import homeImg from "../assest/homeImg.jpg";
 
-
 const Home = () => {
-
   const [currentIndex, setCurrentIndex] = useState(0);
-    const images = [
-     img1,img2,img3,img4
-    ];
-  
-    const nextImage = () => {
-      setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-    };
-    useEffect(() => {
-      const interval = setInterval(nextImage, 2000); 
-      return () => clearInterval(interval); 
-    }, []);
+  const images = [img1, img2, img3, img4];
+
+  const nextImage = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+  useEffect(() => {
+    const interval = setInterval(nextImage, 2000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <>
       <div id="home">
         <div className="firstSection">
           <div className="introText">
             <h3>
-              get a glass skin with prematched boosted 3-6 active products
+              Get a glass skin with prematched boosted 3-6 active products
             </h3>
             <h1>
               See fast results with more actives suitable for sensitive skin.
@@ -48,14 +44,12 @@ const Home = () => {
             </p>
             <button> Create your glass skin routine </button>
           </div>
-          <div className="imgCarousel">
-              <div className="carousel">
-              <img
-                src={images[currentIndex]}
-                alt={`Image ${currentIndex + 1}`}
-                className="carousel-image"
-              />
-            </div>
+          <div className="carousel">
+            <img
+              src={images[currentIndex]}
+              alt={`Image ${currentIndex + 1}`}
+              className="carousel-image"
+            />
           </div>
         </div>
         <div className="secdondSection">
@@ -131,12 +125,10 @@ const Home = () => {
         </div>
         <div className="fourthSection">
           <div className="infoText2">
-            <h3>
-            Build your own personalised routine
-            </h3>
+            <h3>Build your own personalised routine</h3>
             <p>
-              Guidance Build out your very own complete Double Bay Cosmeceuticals regime thats tailored
-              specifically to you.
+              Guidance Build out your very own complete Double Bay
+              Cosmeceuticals regime thats tailored specifically to you.
             </p>
           </div>
           <div className="productCards">
@@ -157,14 +149,16 @@ const Home = () => {
             <div className="productCard">
               <img src={product4} alt="Product 3" />
               <h3>Product 3 </h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque.
+              </p>
               <h4>$49.00</h4>
               <button>Add to Cart</button>
             </div>
           </div>
           <div className="freeDelivery">
             <div className="homeImg">
-            <img src={homeImg} />
+              <img src={homeImg} />
             </div>
           </div>
         </div>
